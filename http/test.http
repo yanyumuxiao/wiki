@@ -27,4 +27,4 @@ GET http://localhost:8080/demo/list
 
 ###
 
-GET http://localhost:8080/ebook/list
+GET http://localhost:8080/ebook/list?name=Spring
