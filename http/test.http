@@ -24,3 +24,7 @@ GET http://localhost:8080/test/list
 ###
 
 GET http://localhost:8080/demo/list
+
+###
+
+GET http://localhost:8080/ebook/list
