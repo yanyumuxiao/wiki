@@ -13,8 +13,9 @@ import java.util.List;
 @RestController
 public class TestController {
 
-    //优先读配置文件里的value
-    @Value("${test.hello:TEST}")
+    // 优先读配置文件里的value
+    // 冒号后面的是默认配置项，当项目打包之后，没有application.properties，可以读取默认值
+    @Value("${test.hello:TEST1111}")
     private String testHello;
 
     @Resource
