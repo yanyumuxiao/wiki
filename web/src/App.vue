@@ -1,25 +1,7 @@
 <template>
   <a-layout id="components-layout-demo-top-side-2">
-    <a-layout-header class="header">
-      <div class="logo" />
-      <a-menu
-          theme="dark"
-          mode="horizontal"
-          :default-selected-keys="['2']"
-          :style="{ lineHeight: '64px' }"
-      >
-        <a-menu-item key="1">
-          nav 1
-        </a-menu-item>
-        <a-menu-item key="2">
-          nav 2
-        </a-menu-item>
-        <a-menu-item key="3">
-          nav 3
-        </a-menu-item>
-      </a-menu>
-    </a-layout-header>
 
+    <the-header></the-header>
     <router-view/>
     <a-layout-footer style="text-align:center">
       Ant Design @2018 Created by Ant UED
@@ -37,3 +19,12 @@
   float: left;
 }
 </style>
+<script lang="ts">
+import {defineComponent} from 'vue';
+import TheHeader from "@/components/the-header.vue";
+
+export default {
+  name: 'app',
+  components: {TheHeader}
+}
+</script>
